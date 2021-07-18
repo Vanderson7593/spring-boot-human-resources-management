@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:th="http://www.thymeleaf.org"
+  lang="pt"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+  layout:decorate="~{layouts/main}"
+>
+  <body>
+    <div layout:fragment="content">
+      <h1>Candidatos</h1>
+
+      <a th:href="@{/candidates/new}" class="btn btn-primary btn-sm mb-3">
+        Adicionar candidato
+      </a>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Area técnica</th>
+            <th>Email</th>
+            <th>Telefone</th>
+            <th>Acções</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr th:each="candidate : ${candidates}">
+            <td class="fs-6" th:text="${candidate.name}"></td>
+            <td class="fs-6" th:text="${candidate.technicalArea}"></td>
+            <td class="fs-6" th:text="${candidate.email}"></td>
+            <td class="fs-6" th:text="${candidate.phone}"></td>
+            <td>
+              <a
+                th:href="@{/candidates/details/{id}(id=${candidate.id})}"
+                class="btn btn-success btn-sm"
+                >Visualizar</a
+              >
+              <a
+                th:href="@{/candidates/edit/{id}(id=${candidate.id})}"
+                class="btn btn-primary btn-sm"
+                >Actualizar</a
+              >
+              <a
+                th:href="@{/candidates/delete/{id}(id=${candidate.id})}"
+                class="btn btn-danger btn-sm"
+                >Excluir</a
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

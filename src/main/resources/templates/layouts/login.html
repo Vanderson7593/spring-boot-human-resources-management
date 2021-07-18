@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <link
+      th:rel="stylesheet"
+      th:href="@{/assets/css/bootstrap/css/bootstrap.min.css} "
+    />
+    <link th:rel="stylesheet" th:href="@{/assets/css/styles.css} " />
+  </head>
+
+  <body>
+    <div class="col py-3">
+      <div layout:fragment="content"></div>
+    </div>
+
+    <script th:src="@{/assets/js/jquery/jquery-3.6.0.min.js}"></script>
+    <script th:src="@{/assets/js/bootstrap/bootstrap.min.js}"></script>
+  </body>
+</html>

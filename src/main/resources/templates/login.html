@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:th="http://www.thymeleaf.org"
+  lang="pt"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+  layout:decorate="~{layouts/login}"
+>
+  <body>
+    <div layout:fragment="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 login-form">
+            <h3>Entrar</h3>
+            <form>
+              <div class="form-group mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Seu email"
+                />
+              </div>
+              <div class="form-group mb-3">
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="Sua senha"
+                />
+              </div>
+              <div class="form-group">
+                <input type="submit" class="btnSubmit" value="Entrar" />
+              </div>
+              <div class="form-group mt-2">
+                <a href="#" class="ForgetPwd" value="Login"
+                  >Esqueci minha senha!</a
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
