@@ -1,12 +1,10 @@
-# This is a human resources project made with java and spring boot
+# This is a human resources project made with java and spring boot frammework
 
 ## Project made with intuit to learn java spring boot frammework
 
 ## Running the java app
 
 mvn spring-boot:run
-
-npx react-native run-android
 
 ## Contributing
 
