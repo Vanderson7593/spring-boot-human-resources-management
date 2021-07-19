@@ -1,6 +1,6 @@
-# This is a human resources project made with java and spring boot frammework
+# This is a simple human resources project made with java and spring boot framework
 
-## Project made with intuit to learn java spring boot frammework
+## Project made with intuit to learn java spring boot framework
 
 ## Running the java app
 
